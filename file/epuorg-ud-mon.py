@@ -6,7 +6,9 @@ class Stacks:
         if self.sizstack == 0:
             print("Operation impossible: Stacks vide")
         else:
-            return self.sizstack.pop()
+            nbr_pop = self.stack[0]
+            self.stack = self.stack[1:]
+            return nbr_pop
 
     def push(self, donner):
         self.stack.append(donner)
