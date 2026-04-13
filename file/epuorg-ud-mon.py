@@ -1,26 +1,26 @@
-class Stacks:
-    def __init__(self, stack: list):
-        self.stack = stack
+class Queues:
+    def __init__(self, queue: list):
+        self.queue = queue
 
     def poping(self):
         if self.sizstack == 0:
-            print("Operation impossible: Stacks vide")
+            print("Operation impossible: Queue vide")
         else:
-            nbr_pop = self.stack[0]
-            self.stack = self.stack[1:]
+            nbr_pop = self.Queue[0]
+            self.Queue = self.Queue[1:]
             return nbr_pop
 
     def push(self, donner):
-        self.stack.append(donner)
+        self.Queue.append(donner)
 
     def peek(self):
         if self.sizstack == 0:
-            print("Operation impossible: Stacks vide")
+            print("Operation impossible: Queue vide")
         else:
             return self.sizstack[-1]
 
     def sizstack(self):
-        return len(self.stack)
+        return len(self.Queue)
 
     def __str__(self):
-        return self.stack
+        return self.Queue
